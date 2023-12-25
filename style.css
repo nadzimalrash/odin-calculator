@@ -1,0 +1,42 @@
+body {
+    font-family: Sans-serif;
+    font-size: 40px;
+}
+
+button {
+    padding: 5px;
+}
+
+.calc {
+    width: 500px;
+    border: 1px solid #767676;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "display display"
+    "numbers operators";
+    gap: 20px;
+}
+
+.display {
+    grid-area: display;
+    background-color: #EFEFEF;
+    padding: 20px;
+    text-align: right;
+    min-height: 1.2em;
+}
+
+.numbers {
+    grid-area: numbers;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.operators {
+    grid-area: operators;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
